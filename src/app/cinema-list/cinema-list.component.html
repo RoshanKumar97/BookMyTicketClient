@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let cinema of cinemas" class="cinemas col-md-3">
+            <div id="showist" class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{cinema.name}}</h5>
+                    <p class="card-text cinemaCity">{{cinema.city}}</p>
+                    <p class="card-text cinemaAddress">{{cinema.address}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

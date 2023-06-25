@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let movie of movies" class="recentMovies col-md-3">
+            <div id="movieList" class="card">
+                <img class="card-img-top" src={{movie.imageUrl}} alt="Card image cap" (click)="redirectToShowDetails(movie.id,movie.imageUrl)">
+                <div class="card-body">
+                    <h1 class="card-title">{{movie.name}}</h1>
+                    <p class="card-text movieDate">{{movie.releaseDate}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
