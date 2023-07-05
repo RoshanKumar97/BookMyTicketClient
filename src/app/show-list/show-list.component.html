@@ -1,13 +1,15 @@
 <div class="container">
-    <img style="padding-top:50px;" src={{this.imageUrl}} alt="Card image cap">
-    <div class="row">
-        <div *ngFor="let show of shows" class="movieShows col-md-3">
-            <div id="showist" class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{show.showTime}}</h5>
-                    <p class="card-text movieDate">{{show.showDate}}</p>
-                </div>
-            </div>
+  <div class="row">
+    <div *ngFor="let show of shows" class="movieShows col-md-3">
+      <div id="showList" class="card">
+        <div class="card-body" (click)="redirectToShowSeats(show)">
+          <h5 class="card-title">{{show.showTime}}</h5>
+          <p class="card-text">{{show.movieId}}</p>
+          <p *ngIf="source === 'fromCinema'" class="card-text">{{show.movie.name}}</p>
+          <p *ngIf="source === 'fromMovie'" class="card-text">{{show.theatre.name}}</p>
+          <p class="card-text movieDate">{{show.showDate}}</p>
         </div>
+      </div>
     </div>
   </div>
+</div>

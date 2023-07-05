@@ -1,0 +1,41 @@
+.container {
+    padding: 20px;
+  }
+  
+  .recentMovies {
+    padding-top: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-img-top {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text.movieDate {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 0;
+  }
+  

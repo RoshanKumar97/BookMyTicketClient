@@ -1,0 +1,50 @@
+.container {
+    padding-top: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .cinemas {
+    padding: 10px;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .cinemaCity {
+    color: #888888;
+  }
+  
+  .cinemaAddress {
+    color: #555555;
+  }
+  

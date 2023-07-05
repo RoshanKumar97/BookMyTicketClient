@@ -2,7 +2,7 @@
 @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 body {
-    font-family: serif;
+    font-family: Georgia;
 }
 a {
     cursor: pointer;

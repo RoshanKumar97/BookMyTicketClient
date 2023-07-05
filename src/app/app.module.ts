@@ -12,6 +12,9 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { CommonServiceService } from './common-service.service';
 import { ShowListComponent } from './show-list/show-list.component';
 import { CinemaListComponent } from './cinema-list/cinema-list.component';
+import { SeatListComponent } from './seat-list/seat-list.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CinemaListComponent } from './cinema-list/cinema-list.component';
     HomeComponent,
     MovieListComponent,
     ShowListComponent,
-    CinemaListComponent
+    CinemaListComponent,
+    SeatListComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

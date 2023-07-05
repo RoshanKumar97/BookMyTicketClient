@@ -1,0 +1,13 @@
+<div class="seat-map">
+  <h2>Movie Theater Seat Selection</h2>
+  <div class="screen">Screen</div>
+  <div class="seats">
+    <div class="seat-row">
+      <div *ngFor="let seat of seats" class="seat" [class.selected]="seat.selected" [class.disabled]="seat.disabled" (click)="selectSeat(seat)">
+        <span>{{ seat.seatNumber }}</span>
+      </div>
+    </div>
+  </div>
+<br>
+  <button (click)="bookSelectedSeats()" [disabled]="selectedSeats.size === 0">Book Selected Seats</button>
+</div>

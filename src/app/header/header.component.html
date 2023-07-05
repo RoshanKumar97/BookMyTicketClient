@@ -11,10 +11,12 @@
               <a class="nav-link" href="#"> <span class="fa fa-bell"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SIGN-IN</a>
+            <a *ngIf="!isLoggedIn" class="nav-link" href="signIn">SIGN-IN</a>
+            <a *ngIf="isLoggedIn" class="nav-link" href="logout">{{ username }}</a>
           </li>
         </ul>
       </div>
     </nav>
   
   </div>
+  <br>
